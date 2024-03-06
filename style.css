@@ -1,0 +1,55 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+.gradient{
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+#testimonial{
+  padding: 4rem;
+  background-color:#1a1b24;
+}
+.container > .Pebbles{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content:center;
+  align-items: center;
+}
+/*Wenn man einem Text auch einen Verlauf geben möchte:*/
+.Pebbles{
+  background-image:linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}/* Ich hab den gelichen wie bei .gradient-background genommen (kann man super mit CSS-Gradient erstellen). Die Eigenschaften webikit-background-clip braucht man weil verläufe eigentlich nur für background-color und -image vorgesehen sind. Durch clip: text; und zusätzlich der Eigenschaft webikit-text-fill-color:transparent; Kann man den Browser austricksen und ihm Sagen: "Die Box hat diesen Hintergrund mit Verlauf und die Schrift soll transparent sein"*/
+
+.doggie{
+  margin-top:10px;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
